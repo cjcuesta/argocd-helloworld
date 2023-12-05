@@ -14,6 +14,6 @@ spec:
           service:
             name: app
             port:
-              number: 3001
+              number: 8080
         path: /WeatherForecast
         pathType: Prefix
