@@ -15,7 +15,7 @@ spec:
         app: app
     spec:
       containers:
-      - name: nginx
-        image: nginx:latest
+      - name: mservicejava
+        image: cjcuesta/ms:v1
         ports:
-        - containerPort: 80
+        - containerPort: 8080
