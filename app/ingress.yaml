@@ -15,5 +15,5 @@ spec:
             name: app
             port:
               number: 80
-        path: /app
+        path: /WeatherForecast
         pathType: Prefix
