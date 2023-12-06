@@ -1,19 +1,22 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  annotations:
-    nginx.ingress.kubernetes.io/rewrite-target: /
-  name: ing-app
-  namespace: default
+  name: ingress-apps
 spec:
-  ingressClassName: nginx
   rules:
-  - http:
-      paths:
-      - backend:
-          service:
-            name: app
-            port:
-              number: 8080
-        path: /WeatherForecast
-        pathType: Prefix
+    - http:
+        paths:
+          - pathType: Prefix
+            path: /
+            backend:
+              service:
+                name: app
+                port:
+                  number: 8080                  
+          - pathType: Prefix
+            path: /inicializa-contador
+            backend:
+              service:
+                name: app
+                port:
+                  number: 8080                                    
