@@ -14,7 +14,7 @@ spec:
                 port:
                   number: 8080                  
           - pathType: Prefix
-            path: /inicializa-contador
+            path: /WeatherForecast
             backend:
               service:
                 name: app
