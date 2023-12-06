@@ -15,7 +15,7 @@ spec:
         app: app
     spec:
       containers:
-      - name: mservicejava
+      - name: app
         image: cjcuesta/ms:v1
         ports:
         - containerPort: 8080
